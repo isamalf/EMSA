@@ -9,8 +9,8 @@ import pandas as pd
 from pandas_datareader import data as pdr
 import time
 
-EMAIL_ADDRESS = os.environ.get('ialfuqahaTest@gmail.com')
-EMAIL_PASSWORD = os.environ.get('qhlkscjrwbedhhqq')
+EMAIL_ADDRESS = os.environ.get('YOUR EMAIL HERE')
+EMAIL_PASSWORD = os.environ.get('YOUR APP PSSWD')
 
 msg = EmailMessage()
 
@@ -22,8 +22,8 @@ stock="QQQ"
 TargetPrice=350
 
 msg['Subject'] = 'Alert on '+ stock+'!'
-msg['From'] = 'ialfuqahaTest@gmail.com'
-msg['To'] = 'isamalfuqaha@gmail.com'
+msg['From'] = 'SENDING EMAIL'
+msg['To'] = 'RECEIVING EMAIL'
 
 alerted=False
 
@@ -46,7 +46,7 @@ while 1:
 
 
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-            smtp.login("ialfuqahaTest@gmail.com", "qhlkscjrwbedhhqq")
+            smtp.login("SENDING EMAIL", "SENDING EMAIL PSSWD")
             smtp.send_message(msg)
 
             print("completed")
