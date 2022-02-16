@@ -11,4 +11,4 @@ This script allows me to receive email alerts about stocks of my choosing. For e
 * pip install DateTime
 * pip install pandas
 * pip install pandas-datareader
-* Python main.py
+* **Python main.py**
